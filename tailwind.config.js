@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Space Grotesk"', '"Sora"', 'system-ui', 'sans-serif'],
+        grift: ['"Grift"', '"Space Grotesk"', '"Sora"', 'system-ui', 'sans-serif'],
       },
       colors: {
         navy: '#0A1A2A',

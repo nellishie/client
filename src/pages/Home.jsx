@@ -10,7 +10,7 @@ const Home = () => {
   useAnalytics('Home');
 
   return (
-    <div className="flex flex-col gap-16">
+	<div className="flex flex-col gap-16 font-grift">
       <Hero />
       <ServicesSnapshot />
       <Differentiators />

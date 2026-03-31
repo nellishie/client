@@ -31,7 +31,7 @@ const LeadForm = ({ title = 'Start the Conversation', compact = false }) => {
         </label>
         {!compact && (
           <label className="flex flex-col gap-2">
-            <span className="text-slate-300">What do you need?</span>
+            <span className="text-slate-300">Bussiness needs?</span>
             <textarea name="message" rows="3" placeholder="Briefly describe your customer operations goals" className="rounded-xl border border-white/10 bg-charcoal px-3 py-2 text-white outline-none transition focus:border-accent" />
           </label>
         )}

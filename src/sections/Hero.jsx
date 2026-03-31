@@ -4,7 +4,7 @@ import { ShieldCheck, Workflow, BarChart3, Gauge } from 'lucide-react';
 const heroImage = '/images/WhatsApp%20Image%202026-03-24%20at%205.43.31%20PM.jpeg';
 
 const Hero = () => (
-  <section className="relative overflow-hidden rounded-3xl border border-white/5 p-10 shadow-card hero-bg">
+  <section className="relative overflow-hidden rounded-3xl border border-white/5 p-10 shadow-card hero-bg font-grift">
     <div className="absolute inset-0 bg-[#0A0F1A]/75" aria-hidden />
     <div className="absolute inset-0 bg-grid bg-[size:24px_24px] opacity-20" aria-hidden />
     <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -17,7 +17,7 @@ const Hero = () => (
           Scalable Customer Operations. Strategic Growth.
         </h1>
         <p className="max-w-2xl text-lg text-slate-200">
-          We design, build, and optimize contact centre programs that deliver reliability, efficiency, and measurable performance without overexposing your operations.
+          We design, build, and optimize contact center programs that deliver reliability, efficiency, and measurable performance without overexposing your operations.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link to="/contact" className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-charcoal transition hover:-translate-y-0.5 hover:bg-accentDark">
@@ -29,7 +29,7 @@ const Hero = () => (
         </div>
         <div className="grid max-w-2xl grid-cols-2 gap-4 text-sm text-slate-300 md:grid-cols-3">
           {[{
-            label: 'Contact centre efficiency gains',
+            label: 'Contact center efficiency gains',
             value: '18-32%'
           }, {
             label: 'Average speed to deploy',
@@ -51,7 +51,7 @@ const Hero = () => (
           <div className="absolute inset-0 bg-gradient-to-t from-[#07101C] via-transparent to-transparent" />
           <div className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-charcoal/80 px-3 py-1 text-xs font-semibold text-slate-100">
             <ShieldCheck size={14} className="text-accent" />
-            Trusted contact centre delivery
+            Trusted contact center delivery
           </div>
         </div>
         <div className="px-6">
@@ -63,18 +63,14 @@ const Hero = () => (
             <img src="/logo.jpeg" alt="Company logo" className="h-12 w-12 rounded-full border border-white/10 object-cover" />
           </div>
           <div className="mt-4 grid gap-3 text-sm text-slate-200">
-            {[{ icon: <Workflow size={16} className="text-accent" />, text: 'Playbooks that are complex with flexibility' }, { icon: <ShieldCheck size={16} className="text-accent" />, text: 'U.S.-based leadership with nearshore and offshore execution' }, { icon: <Gauge size={16} className="text-accent" />, text: 'Performance culture backed by QA and WFM discipline' }, { icon: <BarChart3 size={16} className="text-accent" />, text: 'Data visibility that translates into decisive action' }].map((line) => (
+            {[{ icon: <Workflow size={16} className="text-accent" />, text: 'U.S.-based leadership with nearshore and offshore execution' }, { icon: <ShieldCheck size={16} className="text-accent" />, text: 'Playbooks that are complex with flexibility' }, { icon: <Gauge size={16} className="text-accent" />, text: 'Performance and culture backed by over 51 years of experience' }, { icon: <BarChart3 size={16} className="text-accent" />, text: 'Data visibility that translates into decisive action' }].map((line) => (
               <div key={line.text} className="flex items-start gap-2">
                 {line.icon}
                 <p>{line.text}</p>
               </div>
             ))}
           </div>
-          <div className="mt-4 rounded-xl bg-charcoal/80 p-4 text-sm text-slate-100">
-            <p className="text-xs uppercase tracking-[0.2em] text-accent">Engagement model</p>
-            <p className="font-semibold text-white">Operator + advisor</p>
-            <p className="text-slate-300">We stand up teams, modernize live programs, and embed consulting to keep outcomes on target.</p>
-          </div>
+          
         </div>
       </div>
     </div>
