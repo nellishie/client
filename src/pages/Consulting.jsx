@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading.jsx';
 import useAnalytics from '../hooks/useAnalytics.js';
 import { Workflow, Gauge, Rocket, Compass } from 'lucide-react';
+import consultingVideo from '../assets/5.mp4';
+import consultingPoster from '../assets/4.jpeg';
 
 const consulting = [
   {
@@ -40,8 +42,10 @@ const Consulting = () => {
             />
           <div className="overflow-hidden rounded-2xl border border-white/5 bg-white/5 shadow-card">
             <video
-              src="/images/5.mp4"
+              src={consultingVideo}
               className="h-64 w-full object-cover"
+              preload="metadata"
+              poster={consultingPoster}
               muted
               loop
               autoPlay

@@ -12,15 +12,15 @@ const Contact = () => {
           <dl className="mt-4 space-y-3">
             <div className="flex flex-col">
               <dt className="text-[11px] uppercase tracking-[0.18em] text-slate-400">Company phone</dt>
-              <dd className="text-sm text-white">Add phone number here</dd>
+              <dd className="text-sm text-white">+1 903 744 0462</dd>
             </div>
             <div className="flex flex-col">
               <dt className="text-[11px] uppercase tracking-[0.18em] text-slate-400">Company address</dt>
-              <dd className="text-sm text-white">Add company address here</dd>
+              <dd className="text-sm text-white">PO BOX 910264, Sherman, TX 75091</dd>
             </div>
             <div className="flex flex-col">
               <dt className="text-[11px] uppercase tracking-[0.18em] text-slate-400">Company email</dt>
-              <dd className="text-sm text-white">contact@clientalignsolutions.com</dd>
+              <dd className="text-sm text-white">christine@clientalignsolutions.com</dd>
             </div>
           </dl>
         </div>

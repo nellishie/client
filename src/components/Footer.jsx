@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/logo.jpeg';
 
 const Footer = () => (
   <footer className="border-t border-white/5 bg-charcoal/80">
     <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
       <div className="flex items-center gap-3">
-        <img src="/logo.jpeg" alt="Company logo" className="h-10 w-10 rounded-full border border-white/10 object-cover" />
+        <img src={logoImage} alt="Company logo" className="h-10 w-10 rounded-full border border-white/10 object-cover" loading="lazy" decoding="async" />
         <div>
           <p className="text-sm uppercase tracking-[0.2em] text-accent">&nbsp;</p>
           <p className="text-lg font-semibold text-white">Client Align Solutions</p>

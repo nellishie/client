@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logoImage from '../assets/logo.jpeg';
 
 const links = [
   { to: '/', label: 'Home' },
@@ -18,7 +19,7 @@ const NavBar = () => {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-charcoal/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src="/logo.jpeg" alt="Company logo" className="h-10 w-10 rounded-full border border-white/10 object-cover" />
+          <img src={logoImage} alt="Company logo" className="h-10 w-10 rounded-full border border-white/10 object-cover" decoding="async" fetchPriority="high" />
           <div>
             <p className="text-sm uppercase tracking-[0.2em] text-accent">&nbsp;</p>
             <p className="text-lg font-semibold text-white">Client Align Solutions</p>

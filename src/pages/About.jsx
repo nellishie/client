@@ -1,5 +1,9 @@
 import SectionHeading from '../components/SectionHeading.jsx';
 import useAnalytics from '../hooks/useAnalytics.js';
+import leaderImage1 from '../assets/6.jpeg';
+import leaderImage2 from '../assets/7.jpeg';
+import teamImage from '../assets/8.jpeg';
+import brandLogos from '../assets/logos.jpeg';
 
 const About = () => {
   useAnalytics('About');
@@ -21,8 +25,10 @@ const About = () => {
               <p className="text-xs uppercase tracking-[0.2em] text-accent">Chief Executive Officer</p>
               <div className="h-56 w-full overflow-hidden rounded-2xl shadow-card">
                 <img
-                  src="/images/6.jpeg"
+                  src={leaderImage1}
                   alt="Portrait of Christine Duvall, Chief Executive Officer"
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -50,8 +56,10 @@ const About = () => {
               <p className="text-xs uppercase tracking-[0.2em] text-accent">Chief Operating Officer</p>
               <div className="h-56 w-full overflow-hidden rounded-2xl shadow-card">
                 <img
-                  src="/images/7.jpeg"
+                  src={leaderImage2}
                   alt="Portrait of Tinashe Mapfumo, Chief Operating Officer"
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -78,8 +86,10 @@ const About = () => {
               <p className="text-xs uppercase tracking-[0.2em] text-accent">Consulting Team</p>
               <div className="h-56 w-full overflow-hidden rounded-2xl shadow-card">
                 <img
-                  src="/images/8.jpeg"
+                  src={teamImage}
                   alt="Our trusted team of consultants"
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -90,8 +100,10 @@ const About = () => {
               </p>
               <div className="mt-4 w-full overflow-hidden rounded-2xl border border-white/10 bg-charcoal/70 shadow-card">
                 <img
-                  src="/images/logos.jpeg"
+                  src={brandLogos}
                   alt="Client Align Solutions logo"
+                  loading="lazy"
+                  decoding="async"
                   className="h-auto w-full object-contain"
                 />
               </div>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Workflow, BarChart3, Gauge } from 'lucide-react';
-
-const heroImage = '/images/WhatsApp%20Image%202026-03-24%20at%205.43.31%20PM.jpeg';
+import heroImage from '../assets/9.jpeg';
+import logoImage from '../assets/logo.jpeg';
 
 const Hero = () => (
   <section className="relative overflow-hidden rounded-3xl border border-white/5 p-10 shadow-card hero-bg font-grift">
@@ -47,7 +47,7 @@ const Hero = () => (
       </div>
       <div className="relative flex flex-col gap-4 rounded-2xl border border-accent/30 bg-white/5 p-0 pb-6 hover-card animate-fade-up" style={{ animationDelay: '0.05s' }}>
         <div className="relative overflow-hidden rounded-t-2xl">
-          <img src={heroImage} alt="Team collaborating on customer operations" className="h-64 w-full object-cover" />
+          <img src={heroImage} alt="Team collaborating on customer operations" className="h-64 w-full object-cover" decoding="async" fetchPriority="high" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#07101C] via-transparent to-transparent" />
           <div className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-charcoal/80 px-3 py-1 text-xs font-semibold text-slate-100">
             <ShieldCheck size={14} className="text-accent" />
@@ -60,7 +60,7 @@ const Hero = () => (
               <p className="text-sm uppercase tracking-[0.2em] text-accent">Trusted by global teams</p>
               <p className="text-2xl font-semibold text-white">Operational clarity on day one</p>
             </div>
-            <img src="/logo.jpeg" alt="Company logo" className="h-12 w-12 rounded-full border border-white/10 object-cover" />
+            <img src={logoImage} alt="Company logo" className="h-12 w-12 rounded-full border border-white/10 object-cover" decoding="async" />
           </div>
           <div className="mt-4 grid gap-3 text-sm text-slate-200">
             {[{ icon: <Workflow size={16} className="text-accent" />, text: 'U.S.-based leadership with nearshore and offshore execution' }, { icon: <ShieldCheck size={16} className="text-accent" />, text: 'Playbooks that are complex with flexibility' }, { icon: <Gauge size={16} className="text-accent" />, text: 'Performance and culture backed by over 51 years of experience' }, { icon: <BarChart3 size={16} className="text-accent" />, text: 'Data visibility that translates into decisive action' }].map((line) => (

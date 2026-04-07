@@ -2,31 +2,35 @@ import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading.jsx';
 import useAnalytics from '../hooks/useAnalytics.js';
 import { Headphones, PhoneCall, ClipboardList, PanelsTopLeft } from 'lucide-react';
+import serviceImage1 from '../assets/1.jpeg';
+import serviceImage2 from '../assets/2.jpeg';
+import serviceImage3 from '../assets/3.jpeg';
+import serviceImage4 from '../assets/4.jpeg';
 
 const services = [
   {
     title: 'Inbound Call Center Support',
     outcomes: ['Rapid response coverage across voice, email, and chat', 'Brand-right resolutions that protect CSAT and NPS', 'QA frameworks with calibrated scoring and coaching'],
     icon: Headphones,
-    background: '/images/1.jpeg',
+    background: serviceImage1,
   },
   {
     title: 'Outbound Call Center Services',
     outcomes: ['Compliance-first outreach for retention and revenue support', 'Smart prospecting and sales pipeline growth', 'Outcome tracking and conversion reporting you can trust'],
     icon: PhoneCall,
-    background: '/images/2.jpeg',
+    background: serviceImage2,
   },
   {
     title: 'Back-Office Operations',
     outcomes: ['Case routing, content moderation, and billing support with SLA discipline', 'Knowledge management and macros that reduce rework', 'Data quality management and enrichment for reliable performance'],
     icon: ClipboardList,
-    background: '/images/3.jpeg',
+    background: serviceImage3,
   },
   {
     title: 'Omnichannel Customer Support',
     outcomes: ['Unified orchestration so customers move channels without friction', 'AI-powered workforce optimization', 'Continuity of context between bots, live agents, and specialists'],
     icon: PanelsTopLeft,
-    background: '/images/4.jpeg',
+    background: serviceImage4,
   },
 ];
 
