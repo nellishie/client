@@ -2,6 +2,10 @@
 
 This project is a React and Vite-powered business website built for a customer operations and consulting brand. It presents the company, its services, consulting capabilities, industries served, leadership team, and contact information in a fast, modern single-page application experience with routed pages.
 
+Live website:
+
+- https://clientalignsolutions.com/consulting
+
 Software Developers the CEOs of Luminary Technology:
 
 - Nelson Ishmael Chinyere
